@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+header{
+    box-shadow: #cccccc60 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background:transparent;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 10px;
+    position: fixed;
+    margin: 0 auto;
+}
+.header-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-cadastro{
+    display: flex;
+    gap: 20px;
+}
+.header-sala{
+    color: #010101;
+    background-color: #007bff;
+    border-radius: 80px 10px 10px 0px;
+    font-size: 22px;
+    font-weight: 600;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.header-sala:hover{
+    background-color: #0056b3;
+    color: #ffff;
+}
+
+.header-filmes{
+    color: #0b0a0a;
+    background-color: #007bff;
+    border-radius: 10px 100px 10px 10px;
+    font-size: 19px;
+    font-weight: 600;
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.header-filmes:hover{
+    background-color: #0056b3;
+    color: #ffff;
+}
+img{
+    height: 5rem;
+}/*header quase finalizado  */
+
+.siscinema-cards{
+    background-color: #ffff;
+    height: 35rem;
+    width: 30rem;
+    margin: 10rem auto ;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.siscinema-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.siscinema-flex{
+    padding: 50px 0px;
+}/*buttons superior quase finalizado*/
+
+.siscinema-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.siscinema-text{
+    font-size: 38px;
+    font-weight: 600;
+    font-style: normal;
+    color: #333333;
+}
+.siscinema-subtext{
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    color: #6666;
+}/*text e subtext ja quase finalizado*/
+
+.siscinema-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 25px auto;
+    gap: 10px;
+}
+input {
+    height: 3rem;
+    width: 15rem;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border: none;
+    outline: none;
+}
+input[type = 'text'],  input[type='email'], input[type = 'number']{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}/*input quase finalizada*/
+
+.btn{
+    margin: 10px auto;
+}
+.cadastro{
+    height: 3rem;
+    width: 10rem;
+    font-size:19px ;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    background-color: #007bff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.cadastro:hover{
+    background-color:#0056b3;
+    color: #ffff;
+}/*button cadastrar quase finalizado*/
+
+.siscinema-senha{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+}
+.siscinema-senha:hover{
+    color: #007bff;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: #333333;
+}
+a:hover{
+    color: #ffff;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="sala.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+            <div class="header-logo">
+                <img src="download-removebg-preview.png" alt="Logo">
+            </div>
+            <div class="header-cadastro">
+                <button class="header-sala"><a href="#sessoes" class="header-sala1">SESSÕES</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <form id="form-sala" class="form">
+            <h1 class="sala-cadastro">Cadastramento de Sala</h1>
+            <div class="form-group">
+                <input type="text" id="nome-sala" name="nome-sala" placeholder="Salas..." required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="fileiras" name="fileiras" min="1" max="10" placeholder="Fileiras..." required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="cadeiras" name="cadeiras" min="1" max="10" placeholder="Cadeiras por fileiras..." required>
+            </div>
+            <div class="buttons">
+                <button type="submit" id="toggle-button" class="next-button">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="sessoes-flex" id="sessoes">
+        <div class="sessoes-card0">
+            <img src="kraven.jpg" class="kraven" alt="Kraven">
+            <div class="sessoes-conteudo0">
+                <h1 class="info">Kraven</h1>
+                <p>Dublado em português <br>
+                    14:00  16:30  19:00  21:30</p>
+                <a href="#container" class="btn">Get</a>
+            </div>
+        </div>
+        <div class="sessoes-card1">
+            <img src="thunderbolts.jpg" class="thunder" alt="Thunderbolts">
+            <div class="sessoes-conteudo1">
+                <h1 class="info">Thunderbolts</h1>
+                <p>Dublado em português <br>
+                    14:10  16:40  19:10  21:40
+                    </p>
+                <a href="#container" class="btn">Get</a>
+            </div>
+        </div>
+        <div class="sessoes-card2">
+            <img src="venom.webp" class="venom" alt="Venom">
+            <div class="sessoes-conteudo2">
+                <h1 class="info">Venom</h1>
+                <p>Dublado em português <br>
+                    19:10  21:40 </p>
+                <a href="#container" class="btn">Get</a>
+            </div>
+        </div>
+        <div class="sessoes-card3">
+            <img src="domsday.webp" class="domsday" alt="Doomsday">
+            <div class="sessoes-conteudo3">
+                <h1 class="info">Doomsday</h1>
+                <p>Dublado em português <br>
+                    14:30  17:00
+                </p>
+                <a href="#container" class="btn">Get</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="get-container" id="container">
+        <div class="get-card">
+            <div class="get-flex">
+                <i class="bi bi-cart3" id="get-car"></i>
+                <h1 class="get-title">Ingresso de Cinema</h1>
+                <p class="get-subtitle">Deixe sua Opinião</p>
+                <div class="-get-icone">
+                    <i class="bi bi-star" id="star1"></i>
+                    <i class="bi bi-star" id="star2"></i>
+                    <i class="bi bi-star" id="star3"></i>
+                    <i class="bi bi-star" id="star4"></i>
+                    <i class="bi bi-star" id="star5"></i>
+                </div>
+            </div>
+            <button id="get-openModal1" class="get-comprar">Comprar</button>
+            <div id="get-paymentModal1" class="get-modal">
+                <div class="modal-content">
+                    <span class="get-close">&times;</span>
+                    <h2>Escolha a forma de pagamento</h2>
+                    <select id="get-paymentMethod1" onchange="updatePaymentMethod('get-paymentMethod1', 'get-paymentDetails1')">
+                        <option value="pix">PIX</option>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+                    <div id="get-paymentDetails1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="get-card">
+            <div class="get-flex">
+                <i class="bi bi-cart3" id="get-car"></i>
+                <h1 class="get-title">Ingresso Meia</h1>
+                <p class="get-subtitle">Deixe sua Opinião</p>
+                <div class="-get-icone">
+                    <i class="bi bi-star" id="star1"></i>
+                    <i class="bi bi-star" id="star2"></i>
+                    <i class="bi bi-star" id="star3"></i>
+                    <i class="bi bi-star" id="star4"></i>
+                    <i class="bi bi-star" id="star5"></i>
+                </div>
+            </div>
+            <button id="get-openModal2" class="get-comprar">Comprar</button>
+            <div id="get-paymentModal2" class="get-modal">
+                <div class="modal-content">
+                    <span class="get-close1">&times;</span>
+                    <h2>Escolha a forma de pagamento</h2>
+                    <select id="get-paymentMethod2" onchange="updatePaymentMethod('get-paymentMethod2', 'get-paymentDetails2')">
+                        <option value="pix">PIX</option>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+                    <div id="get-paymentDetails2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="get-card">
+            <div class="get-flex">
+                <i class="bi bi-cart3" id="get-car"></i>
+                <h1 class="get-title">Ingresso Premium</h1>
+                <p class="get-subtitle">Deixe sua Opinião</p>
+                <div class="-get-icone">
+                    <i class="bi bi-star" id="star1"></i>
+                    <i class="bi bi-star" id="star2"></i>
+                    <i class="bi bi-star" id="star3"></i>
+                    <i class="bi bi-star" id="star4"></i>
+                    <i class="bi bi-star" id="star5"></i>
+                </div>
+            </div>
+            <button id="get-openModal3" class="get-comprar">Comprar</button>
+            <div id="get-paymentModal3" class="get-modal">
+                <div class="modal-content">
+                    <span class="get-close2">&times;</span>
+                    <h2>Escolha a forma de pagamento</h2>
+                    <select id="get-paymentMethod3" onchange="updatePaymentMethod('get-paymentMethod3', 'get-paymentDetails3')">
+                        <option value="pix">PIX</option>
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto</option>
+                    </select>
+                    <h1>abuuuuu</h1>
+                    <div id="get-paymentDetails3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Seleciona todos os modais e botões
+            const modals = {
+                'get-paymentModal1': document.getElementById('get-paymentModal1'),
+                'get-paymentModal2': document.getElementById('get-paymentModal2'),
+                'get-paymentModal3': document.getElementById('get-paymentModal3')
+            };
+
+            const openButtons = {
+                'get-openModal1': document.getElementById('get-openModal1'),
+                'get-openModal2': document.getElementById('get-openModal2'),
+                'get-openModal3': document.getElementById('get-openModal3')
+            };
+
+            const closeButtons = {
+                'get-paymentModal1': document.querySelector('.get-close'),
+                'get-paymentModal2': document.querySelector('.get-close1'),
+                'get-paymentModal3': document.querySelector('.get-close2')
+            };
+
+            // Função para abrir o modal
+            function openModal(modalId) {
+                modals[modalId].style.display = 'block';
+            }
+
+            // Função para fechar o modal
+            function closeModal(modalId) {
+                modals[modalId].style.display = 'none';
+            }
+
+            // Adiciona o evento de clique aos botões para abrir os modais
+            for (const [btnId, button] of Object.entries(openButtons)) {
+                button.onclick = function() {
+                    const modalId = btnId.replace('openModal', 'paymentModal');
+                    openModal(modalId);
+                };
+            }
+
+            // Adiciona o evento de clique aos botões para fechar os modais
+            for (const [modalId, button] of Object.entries(closeButtons)) {
+                button.onclick = function() {
+                    closeModal(modalId);
+                };
+            }
+
+            // Fecha o modal se o usuário clicar fora do conteúdo
+            window.onclick = function(event) {
+                for (const [modalId, modal] of Object.entries(modals)) {
+                    if (event.target === modal) {
+                        closeModal(modalId);
+                    }
+                }
+            };
+
+            // Atualiza as informações do pagamento com base na seleção
+            function updatePaymentMethod(paymentMethodId, paymentDetailsId) {
+                const paymentMethodSelect = document.getElementById(paymentMethodId);
+                const paymentDetails = document.getElementById(paymentDetailsId);
+                const method = paymentMethodSelect.value;
+                let details = '';
+
+                switch(method) {
+                    case 'pix':
+                        details = '<p>Instruções para pagamento via PIX.</p>';
+                        break;
+                    case 'cartao':
+                        details = '<p>Formulário para inserção dos dados do cartão de crédito.</p>';
+                        break;
+                    case 'boleto':
+                        details = '<p>Instruções para pagamento via boleto.</p>';
+                        break;
+                }
+
+                paymentDetails.innerHTML = details;
+            }
+
+            // Atualiza com o valor inicial selecionado
+            document.querySelectorAll('select[id^="get-paymentMethod"]').forEach(select => {
+                const methodId = select.id;
+                const detailsId = methodId.replace('paymentMethod', 'paymentDetails');
+                updatePaymentMethod(methodId, detailsId);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+            <div class="header-logo">
+                <img src="download-removebg-preview.png" alt="">
+            </div>
+
+            <div class="header-cadastro">
+                <button class="header-sala"><a href="sala.html">SALA</a></button>
+                <button class="header-filmes">FILME</button>
+            </div>
+        </div>
+    </header>
+
+
+    <form class="siscinema-cards" id="cadastro">
+
+        <div class="siscinema-flex"><!--cadastro cinema feito-->
+            <h1 class="siscinema-text">cadastro siscinema</h1>
+            <p class="siscinema-subtext">complete as informações</p>
+
+            <div class="siscinema-box">
+
+                <input type="text" id="nome" name="nome" placeholder=" nome..."  >
+                <input type="number" id="idade" name="idade" min="0" max="120"  placeholder="idade..." required >
+                <input type="email" id="email" name="email" placeholder="email..."  required>
+                <input type="text" placeholder="senha..." checked>
+                <a href="" class="siscinema-senha" onclick="exibirmensagemsenha()">esqueceu senha ?</a>
+
+                <div class="btn">
+                    <button class="cadastro" type="submit" onclick="return validarformulario()">CADASTRA</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+    <script> 
+        function validarformulario(){
+            const nome = document.getElementById('nome').value;
+            const idade = document.getElementById('idade').value;
+            const email = document.getElementById('email').value;
+
+            if(nome.trim() === '' || email.trim() === '' || isNaN(idade) || idade < 0 || idade > 120){
+                alert('Por favor, preencha todos os campos corretamente.');
+                return false;
+            }
+            return true;
+        }
+        function exibirmensagemsenha(){
+            alert("enviaremos instruções para redefinir sua senha por email.")
+        }
+    </script>
+</body>
+</html>
